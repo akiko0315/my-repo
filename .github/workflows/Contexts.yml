@@ -1,0 +1,7 @@
+nama: Contexts
+on: push
+jobs: 
+  print: 
+    runs-on: windows-latest
+    steps: 
+      -runs: echo "${{ github.actor }}"
