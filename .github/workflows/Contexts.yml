@@ -1,7 +1,7 @@
 nama: Contexts
-on: push
+on: [push, workflow_dispatch]
 jobs: 
   print: 
     runs-on: windows-latest
     steps: 
-      -runs: echo "${{ github.actor }}"
+      - runs: echo "${{ github.actor }}"
